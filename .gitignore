@@ -1,0 +1,8 @@
+*.elc
+/abbrev_defs
+/ac-comphist.dat
+/anything-c-adaptive-history
+/elpa/
+/filecachedir.el
+/lisp/
+/url/
