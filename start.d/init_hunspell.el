@@ -1,0 +1,22 @@
+(setq ispell-program-name "hunspell")
+(defun paths-construct-path (alist blist)
+  ()
+;  (concat "pl_PL")
+;  (set 'pl_PL (string "pl_PL"))
+;  pl_PL
+;  (mapconcat (function (lambda (x) x)) 
+;             alist
+;             " ")
+)
+(require 'rw-language-and-country-codes)
+(require 'rw-ispell)
+(require 'rw-hunspell)
+;(setq ispell-dictionary "en_US_hunspell")
+(custom-set-variables
+; '(rw-hunspell-default-dictionary "en_US_hunspell")
+; '(rw-hunspell-default-dictionary "en-US")
+; '(rw-hunspell-dicpath-list '("/System/Library/Spelling"))
+ '(rw-hunspell-make-dictionary-menu t)
+ '(rw-hunspell-use-rw-ispell t)
+)
+(provide 'init_hunspell)
