@@ -11,4 +11,7 @@
 ;; 矩形選択を簡単に
 (cua-mode t)
 (setq cua-enable-cua-keys nil)
+
+;; trampを有効に
+(require 'tramp)
 (provide 'init_global)

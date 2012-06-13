@@ -22,8 +22,9 @@
 (require 'init_session)
 ;; html-helper
 (require 'init_html_helper)
-;;
-(require 'init_jdee)
+;; java mode
+;(require 'init_jdee)
+(require 'init_malabar)
 ;;
 (require 'init_speedbar)
 ;; rw-hunspell

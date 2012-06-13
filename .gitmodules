@@ -1,0 +1,3 @@
+[submodule "submodule/malabar-mode"]
+	path = submodule/malabar-mode
+	url = https://github.com/buzztaiki/malabar-mode.git

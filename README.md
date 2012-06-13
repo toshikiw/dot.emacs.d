@@ -30,6 +30,7 @@
 * html-helper-mode
 * jdee
 * ddskk
+* malabar-1.5-SNAPSHOT
 
 ## package install(elpa)
 多分更新しない...
@@ -43,6 +44,7 @@
 * deferred-0.3.1
 * edbi-0.1.0
 * epc-0.1.0
+* fuzzy-0.1
 * php-mode-1.5.0
 * popup-0.5
 * rw-hunspell-0.2
@@ -54,6 +56,16 @@
 
 ## elispメモ
 備忘録
+
+### malabar-modeについて
+
+JDEEが古いのでmalabar-modeに切り替えた
+
+* git submodule add https://github.com/buzztaiki/malabar-mode.git submodule/malabar-mode
+* cedetが必要(emacs 23は標準で付いている)
+* pom.xmlの<executable>emacs</executable>を環境に合せて修正
+* mvn package
+* targetに出来たzipをlispに解凍
 
 ### JDEEのbeanshellについて
 
