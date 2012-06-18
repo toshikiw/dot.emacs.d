@@ -14,4 +14,10 @@
 
 ;; trampを有効に
 (require 'tramp)
+;; magitを有効に
+(when mac-p
+  (setq magit-git-executable "/usr/local/git/bin/git")
+)
+(require 'magit)
+(require 'magit-svn)
 (provide 'init_global)

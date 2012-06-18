@@ -2,6 +2,8 @@
 (require 'init_color)
 ;; keybord 設定
 (require 'init_key)
+;; eshell 設定
+(require 'init_eshell)
 ;; w3m
 (require 'init_w3m)
 ;; marmalade
