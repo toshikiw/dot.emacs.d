@@ -10,4 +10,13 @@
           '(lambda ()
              (define-key eshell-mode-map (kbd "M-r") 'eshell-isearch-backward))
 )
+;; $HOME/bin があれば PATHに追加
+(let ((home-bin (concat (getenv "HOME") "/bin")))
+  (when (file-accessible-directory-p home-bin)
+    (setenv "PATH" (concat home-bin ":" (getenv "PATH")))
+))
+;; rvm setting
+(when (require 'rvm nil t)
+  (rvm-use-default)
+)
 (provide 'init_eshell)

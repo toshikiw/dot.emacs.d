@@ -1,3 +1,6 @@
 [submodule "submodule/malabar-mode"]
 	path = submodule/malabar-mode
 	url = https://github.com/buzztaiki/malabar-mode.git
+[submodule "submodule/rvm.el"]
+	path = submodule/rvm.el
+	url = https://github.com/senny/rvm.el.git
