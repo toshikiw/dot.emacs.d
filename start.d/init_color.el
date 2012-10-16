@@ -46,11 +46,17 @@
 ;  (set-fontset-font "fontset-menlokakugo" 'unicode (font-spec :family "Hiragino Kaku Gothic ProN" ) nil 'append)
 ;  (add-to-list 'default-frame-alist '(font . "fontset-menlokakugo"))
 ;  (setq face-font-rescale-alist '((".*Hiragino.*" . 1.2) (".*Menlo.*" . 1.0)))
-  (create-fontset-from-ascii-font "Menlo-9:weight=normal:slant=normal" nil "menloosaka")
-  (set-fontset-font "fontset-menloosaka" 'unicode (font-spec :family "OsakaMono" ) nil 'append)
-  (add-to-list 'default-frame-alist '(font . "fontset-menloosaka"))
-  (setq face-font-rescale-alist '((".*Osaka.*" . 1.2) (".*Menlo.*" . 1.0)))
+;  (create-fontset-from-ascii-font "Menlo-9:weight=normal:slant=normal" nil "menloosaka")
+;  (set-fontset-font "fontset-menloosaka" 'unicode (font-spec :family "OsakaMono" ) nil 'append)
+;  (add-to-list 'default-frame-alist '(font . "fontset-menloosaka"))
+;  (setq face-font-rescale-alist '((".*Osaka.*" . 1.2) (".*Menlo.*" . 1.0)))
+;  (setq mac-allow-anti-aliasing t)
+  (create-fontset-from-ascii-font "Source Code Pro-9:weight=normal:slant=normal:style=ExtraLight" nil "scosaka")
+  (set-fontset-font "fontset-scosaka" 'unicode (font-spec :family "OsakaMono" ) nil 'append)
+  (add-to-list 'default-frame-alist '(font . "fontset-scosaka"))
+  (setq face-font-rescale-alist '((".*Osaka.*" . 1.2) (".*Source Code Pro.*" . 1.0)))
   (setq mac-allow-anti-aliasing t)
+  (setq-default line-spacing 0.1)
 
   ;; カーソル行をハイライト
   (defface hlline-face
