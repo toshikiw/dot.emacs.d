@@ -10,5 +10,7 @@
   (setq ns-alternate-modifier (quote super))
   ;; フレーム移動をCommand-`に設定
   (global-set-key (kbd "M-`") 'other-frame)
+  ;; ドラッグ&ドロップでファイルを開く
+  (define-key global-map [ns-drag-file] 'ns-find-file)
 )
 (provide 'init_key)
