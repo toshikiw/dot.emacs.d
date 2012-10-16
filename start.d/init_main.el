@@ -23,10 +23,12 @@
 ;; session
 (require 'init_session)
 ;; html-helper
-(require 'init_html_helper)
+;(require 'init_html_helper)
 ;; java mode
 ;(require 'init_jdee)
 (require 'init_malabar)
+;; ack grep
+(require 'init_ack)
 ;;
 (require 'init_speedbar)
 ;; rw-hunspell
