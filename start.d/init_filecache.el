@@ -10,12 +10,16 @@
     )
   (let (paths excludes))
 )
-;; ディレクトリを追加
-;; ディレクトリの更新は filecachedir.sh を使う
-(load-file "~/.emacs.d/filecachedir.el")
-;(require 'filecachedir)
-(file-cache-add-directory-list
- my-filedir)
+(let ((prg (concat user-emacs-directory "filecachedir.sh")))
+  (when (file-readable-p prg)
+    ;; ディレクトリを追加
+    ;; ディレクトリの更新は filecachedir.sh を使う
+    (call-process prg nil nil nil "")
+    (load-file "~/.emacs.d/filecachedir.el")
+    (file-cache-add-directory-list
+     my-filedir)
+    )
+  )
 ;(file-cache-add-directory-list
 ;  (list "~/work"))
 ;(file-cache-add-file-list

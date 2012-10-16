@@ -48,9 +48,10 @@
           (lambda ()
             (if (file-newer-than-file-p (concat user-emacs-directory "init.el") (concat user-emacs-directory "init.elc"))
                 (byte-compile-file (concat user-emacs-directory "init.el")))
-            (if (file-newer-than-file-p (concat user-emacs-directory "filecachedir.el") (concat user-emacs-directory "filecachedir.elc"))
-                (byte-compile-file (concat user-emacs-directory "filecachedir.el")))
+            ;(if (file-newer-than-file-p (concat user-emacs-directory "filecachedir.el") (concat user-emacs-directory "filecachedir.elc"))
+            ;    (byte-compile-file (concat user-emacs-directory "filecachedir.el")))
             (byte-recompile-directory (concat user-emacs-directory "lisp") 0)
             (byte-recompile-directory (concat user-emacs-directory "start.d") 0)
             )
 )
+
